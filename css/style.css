@@ -29,7 +29,7 @@ main{
   height: calc(100% - 90px);
   overflow: auto;
 }
-p{
+.container-album{
   margin-top: 100px;
   margin-left: 240px;
 }
@@ -49,10 +49,10 @@ p{
 }
 div.img_logo{
   width: 100%;
-  padding: 0 45px;
+  padding: 0 50px;
 }
 img.logo{
-  color: white;
+  background-color: white;
   width: 100%;
 }
 button{
@@ -77,20 +77,25 @@ img.home{
   padding-left: 6px;
 }
 div.crea_playlist,
-div.playlist{
+div.playlist,
+.bottom_menu{
   margin-left: 20px;
   vertical-align: middle;
 }
-.bottom_menu{
-  height: 100vh;
-  overflow: auto;
-}
 div.crea_playlist{
   height: calc(100% - 300px);
+  background-color: lightgreen;
 }
 div.playlist{
 height: 300px;
 overflow: auto;
+background-color: blue;
+}
+.bottom_menu{
+background-color: yellow;
+height: 150px;
+position: relative;
+z-index: 30;
 }
 h4{
   margin: 10px 0 5px 0;
@@ -104,6 +109,6 @@ i.plus_crea{
 footer{
   height: 90px;
   background-color: pink;
-  display: flex;
-  align-items: flex-end;
+  position: relative;
+  z-index: 20;
 }
