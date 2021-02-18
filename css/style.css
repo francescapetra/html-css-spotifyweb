@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container_all{
+  height: 100vh;
+  background-color: aqua;
+}
+main{
+  display: flex;
+  height: calc(100% - 90px);
+  overflow: auto;
+}
+p{
+  margin-top: 100px;
+  margin-left: 240px;
+}
+.nav_bar{
+  flex-direction: row;
+  width: 100%;
+  background-color: blue;
+  height: 90px;
+  position: fixed;
+}
+.menu_aside{
+  display: flex;
+  align-items: flex-start;
+  background-color: black;
+  width: 230px;
+  height: calc( 100% - 90px);
+  position: fixed;
+  z-index: 10;
+}
+footer{
+  height: 90px;
+  background-color: pink;
+  display: flex;
+  align-items: flex-end;
+}
