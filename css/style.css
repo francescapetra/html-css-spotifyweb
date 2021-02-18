@@ -32,6 +32,16 @@ p{
   position: fixed;
   z-index: 10;
 }
+div.img_logo{
+  width: 100%;
+  display: flex;
+  padding: 0 50px;
+}
+img.logo{
+  display: flex;
+  color: white;
+  width: 100%;
+}
 footer{
   height: 90px;
   background-color: pink;
