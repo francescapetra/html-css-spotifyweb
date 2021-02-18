@@ -7,6 +7,23 @@
   height: 100vh;
   background-color: aqua;
 }
+.gray_color{
+  color: #a3a3a3;
+}
+.white_color{
+  color: #fff;
+}
+.text_uppercase{
+  text-transform: uppercase;
+}
+a,
+ul li{
+  list-style: none;
+  text-decoration: none;
+}
+ul.list li{
+  margin: 15px 0;
+}
 main{
   display: flex;
   height: calc(100% - 90px);
@@ -24,8 +41,6 @@ p{
   position: fixed;
 }
 .menu_aside{
-  display: flex;
-  align-items: flex-start;
   background-color: black;
   width: 230px;
   height: calc( 100% - 90px);
@@ -34,13 +49,57 @@ p{
 }
 div.img_logo{
   width: 100%;
-  display: flex;
-  padding: 0 50px;
+  padding: 0 45px;
 }
 img.logo{
-  display: flex;
   color: white;
   width: 100%;
+}
+button{
+  position: absolute;
+  right: 20px;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  margin-top: 25px;
+  background-color: transparent;
+  border-radius: 20px;
+}
+img.home,
+img.search,
+img.library{
+  background-color: white;
+  width: 25%;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+img.home{
+  border-left: 4px solid #adff2f;
+  padding-left: 6px;
+}
+div.crea_playlist,
+div.playlist{
+  margin-left: 20px;
+  vertical-align: middle;
+}
+.bottom_menu{
+  height: 100vh;
+  overflow: auto;
+}
+div.crea_playlist{
+  height: calc(100% - 300px);
+}
+div.playlist{
+height: 300px;
+overflow: auto;
+}
+h4{
+  margin: 10px 0 5px 0;
+  vertical-align: middle;
+}
+i.plus_crea{
+  font-size: 35px;
+  color: #a3a3a3;
+  vertical-align: middle;
 }
 footer{
   height: 90px;
