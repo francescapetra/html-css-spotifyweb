@@ -47,11 +47,13 @@ li a.name_playlist{
 ul.list li{
   margin: 10px 0;
 }
-ul.scelta_genere li {
-  display: inline-block;
+ul.scelta_genere {
+  display: flex;
+}
+ul.scelta_genere li{
+  padding: 10px;
 }
 ul.scelta_genere li a{
-  margin-right: 20px;
   justify-content: space-between;
   font-size: 14px;
   font-weight: bold;
@@ -69,6 +71,7 @@ main{
 }
 .nav_bar{
   display: flex;
+  z-index: 10;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
@@ -83,7 +86,7 @@ main{
   width: 230px;
   height: calc( 100% - 90px);
   position: fixed;
-  z-index: 10;
+  z-index: 20;
   padding: 0 3px;
 }
 .menu_aside_mobile{
@@ -116,8 +119,12 @@ img.logo{
   padding: 10px 20px;
   background-color: transparent;
   border-radius: 20px;
-  margin-right: 20px;
+  margin-right: 30px;
   font-size: 12px;
+  transition: 1s;
+}
+.button:hover{
+  transform: scale(1.2);
 }
 img.home,
 img.search,
@@ -149,6 +156,7 @@ img.profile_mobile{
   background-color: gray;
   width: 40%;
   margin: auto;
+  margin-top: 25px;
   padding:0;
   border-radius: 20px;
   display: block;
@@ -156,6 +164,7 @@ img.profile_mobile{
 div.app_profile_mobile{
   margin-top: auto;
 }
+
 p.john{
   display: inline-block;
   vertical-align: middle;
@@ -171,11 +180,10 @@ margin: 10px 0;
 }
 ul.scelta_genere li:hover::after {
 content: "";
-display: inline-block;
+display: block;
 border-bottom: 2px solid #adff2f;
-width: 25%;
-margin-left: 30px;
-margin-right: -30px;
+width: 30%;
+margin: 0 auto;
 }
 ul li a.border:hover{
   border-left: 3px solid #adff2f;
@@ -258,9 +266,45 @@ p.suggest{
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
+img.album-cover{
+  display: block;
+  transition: 1s;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
 div.album_item{
   width: calc((100%/6) - 10px);
   margin-right: 10px;
+}
+div.container_img{
+  position: relative;
+}
+div.album_item:hover .overlay{
+  opacity: 0.8;
+  overflow: hidden;
+}
+.text {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 1;
 }
 img.album-cover.cover_profile{
   border-radius: 50%;
@@ -274,7 +318,7 @@ footer{
   height: 90px;
   background-color: pink;
   position: relative;
-  z-index: 20;
+  z-index: 30;
 }
 @media screen and (max-width: 1100px) {
   div.album_item{
@@ -286,8 +330,17 @@ footer{
     width: calc((100%/2) - 10px);
   }
   ul.scelta_genere li a {
-  margin-right: 35px;
+  /* margin-right: 35px; */
   margin-top: 20px;
+  }
+  h2{
+    font-size: 18px;
+  }
+  h3{
+    font-size: 10px;
+  }
+  p.sub{
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 420px) {
@@ -299,5 +352,9 @@ footer{
 }
 .menu_aside_mobile{
   visibility: visible;
+}
+ul.scelta_genere li a{
+  margin-right: 10px;
+  font-size: 10px;
 }
 }
