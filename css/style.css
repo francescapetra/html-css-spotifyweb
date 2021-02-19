@@ -3,9 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  font-family: 'Montserrat', sans-serif;
+}
 .container_all{
   height: 100vh;
-  background-color: aqua;
+  background-color: lightgreen;
+  /* background-color: #141922; */
 }
 .gray_color{
   color: #a3a3a3;
@@ -60,12 +64,13 @@ main{
   z-index: 10;
 }
 div.img_logo{
-  width: 100%;
-  padding: 0 50px;
+  width:170px;
+  display: inline-block;
+  text-align: center;
+  margin: 20px 10px;
 }
 img.logo{
-  background-color: white;
-  width: 100%;
+  width: 90%;
 }
 .button{
   align-items: center;
@@ -78,20 +83,18 @@ img.logo{
 img.home,
 img.search,
 img.library{
-  background-color: white;
-  width: 25%;
-  padding-left: 10px;
+  width: 20%;
   vertical-align: middle;
+  padding-left: 20px;
+  margin-bottom: 10px;
 }
-img.home{
-  border-left: 4px solid #adff2f;
-  padding-left: 6px;
+li a.border:hover{
+  border-left: 3px solid #adff2f;
 }
 .main_menu{
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #FFB7B2;
   overflow: hidden;
 }
 div.crea_playlist,
@@ -124,7 +127,7 @@ i.plus_crea{
   color: #a3a3a3;
   vertical-align: middle;
 }
-.container_album{
+.main_content{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -132,30 +135,30 @@ i.plus_crea{
   margin-left: 240px;
   width: 100%;
 }
-.content_menu{
-  /* width: 100%; */
+.main_content,
+div.titolo_genere,
+div.sotto_categoria_genere{
+width: 100%;
 }
 h2{
-  margin: 20px 0;
+  margin: 20px 0 20px 10px;
 }
 .raccolta_album,
 .creato_per{
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 div.album_item{
-  height: 200px;
-  width: 200px;
+  width: calc((100%/6) - 10px);
   margin-right: 10px;
 }
 .profile{
   border-radius: 50%;
-  background-color: pink;
   overflow: hidden;
 }
 img.album-cover{
-width: 95%;
-height: 95%;
+width: 100%;
 }
 img.cover_profile{
   width: 100%;
