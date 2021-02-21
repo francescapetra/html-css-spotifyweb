@@ -28,7 +28,14 @@ body{
   font-size: 11px;
   font-weight: 500;
 }
-ul li a.border{
+.font_size_10{
+  font-size: 10px;
+}
+.bolder{
+  font-weight: bold;
+}
+ul li a.bolder:hover,
+.play_crea_list:hover{
   font-size: 14px;
   font-weight: 500;
 }
@@ -130,8 +137,9 @@ img.home,
 img.search,
 img.library{
   width: 10%;
+  padding: 7px 0;
   vertical-align: middle;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   margin-left: 17px;
   opacity: 0.7;
 }
@@ -164,7 +172,6 @@ img.profile_mobile{
 div.app_profile_mobile{
   margin-top: auto;
 }
-
 p.john{
   display: inline-block;
   vertical-align: middle;
@@ -178,15 +185,19 @@ border-width: thin;
 width: 90%;
 margin: 10px 0;
 }
-ul.scelta_genere li:hover::after {
+ul.scelta_genere li a:focus{
 content: "";
 display: block;
 border-bottom: 2px solid #adff2f;
-width: 30%;
-margin: 0 auto;
+color: #fff;
 }
-ul li a.border:hover{
+ul li.border a:focus{
+  content: "";
+  display: block;
   border-left: 3px solid #adff2f;
+  margin-left: -3px;
+  color: #fff;
+  font-weight: 700;
 }
 ul.icone{
 border-left: 3px;
@@ -196,7 +207,9 @@ ul.list a:hover,
 ul.scelta_genere li a:hover,
 .download:hover,
 a.app:hover,
-ul.icone li a:hover{
+a.play_crea_list:hover,
+ul.icone li a:hover,
+a.icon_heart:hover{
   color:#fff;
 }
 .main_menu{
@@ -212,7 +225,11 @@ div.playlist,
   vertical-align: middle;
 }
 div.crea_playlist{
-  height: 100px;
+padding: 10px 0;
+}
+a.play_list{
+  padding-bottom: 10px;
+  display: inline-block;
 }
 div.playlist{
 height: 80%;
@@ -284,6 +301,7 @@ img.album-cover{
   transition: .5s ease;
   background-color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
+  cursor: pointer;
 }
 div.album_item{
   width: calc((100%/6) - 10px);
@@ -314,12 +332,129 @@ img.album-cover{
 width: 100%;
 margin-top: 10px;
 }
+
+/* footer */
 footer{
   height: 90px;
   background-color: pink;
   position: relative;
   z-index: 30;
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: #282828;
+  width: 100%;
 }
+div.media_player_start,
+div.media_player_nav,
+div.media_player_end{
+  width: calc(100% /3);
+  display: flex;
+}
+.media_player_start{
+  background-color: #282828;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+div.album_riprodotto{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 20%;
+}
+img.riprodotto{
+  width: 70%;
+}
+div.titolo_riprodotto{
+  display: block;
+  margin: auto 0;
+}
+h5{
+  margin-bottom: 2px;
+}
+div.heart_folder{
+  display: block;
+  margin: auto;
+  margin-left: 30px;
+}
+div.list_desk_volume{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+}
+i.heart_icon{
+  padding-right: 7px;
+}
+.media_player_nav{
+  padding: 0 10px;
+  width: 50%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+div.first_player,
+div.second_player{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+div.first_player{
+  margin: 0px auto;
+  align-items: center;
+  width: 40%;
+}
+div.second_player{
+  width: 100%;
+  margin: 10px auto;
+  align-items: center;
+}
+a i.play_more{
+  font-size: 30px;
+}
+div.progress_bar{
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+}
+ hr{
+  display:block;
+  width: 90%;
+  background-color: gray;
+  border: 1px solid gray;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+hr:hover{
+  content: "";
+  display: block;
+  border-bottom: 3px solid #adff2f;
+  margin-top: 2px;
+}
+
+.media_player_end{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+}
+i.list_desk_icon{
+ font-size: 13px;
+ margin-right: 10px;
+}
+
+div.volume_bar{
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
+  align-items: flex-end;
+}
+
 @media screen and (max-width: 1100px) {
   div.album_item{
     width: calc((100%/4) - 10px);
@@ -342,6 +477,12 @@ footer{
   p.sub{
     font-size: 10px;
   }
+  .button {
+      margin-right: 10px;
+  }
+  /* div.first_player {
+    max-width: 130px;
+  } */
 }
 @media screen and (max-width: 420px) {
   .menu_aside{
@@ -357,4 +498,7 @@ ul.scelta_genere li a{
   margin-right: 10px;
   font-size: 10px;
 }
+/* div.first_player {
+    max-width: 100px;
+} */
 }

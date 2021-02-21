@@ -13,20 +13,20 @@
       <main>
         <aside class="menu_aside">
           <div class="img_logo">
-            <img class="logo" src="img/logo.svg" alt="logo">
+            <a href="#"> <img class="logo" src="img/logo.svg" alt="logo"></a>
           </div>
           <div class="top_menu">
             <ul class="icone">
-              <li><a class=" border gray_color" href="#"><img class="home" src="img/home.svg" alt="home">Home</a></li>
-              <li><a class=" border gray_color" href="#"><img class="search" src="img/search.svg" alt="home">Cerca</a></li>
-              <li><a class=" border gray_color" href="#"><img class="library" src="img/libreria.svg" alt="home">La tua libreria</a></li>
+              <li class="border"><a class="font_size_13 bolder gray_color" href="#"><img class="home" src="img/home.svg" alt="home">Home</a></li>
+              <li class="border"><a class="font_size_13 bolder gray_color" href="#"><img class="search" src="img/search.svg" alt="home">Cerca</a></li>
+              <li class="border"><a class="font_size_13 bolder gray_color" href="#"><img class="library" src="img/libreria.svg" alt="home">La tua libreria</a></li>
             </ul>
           </div>
           <div class="main_menu">
             <div class="crea_playlist font_size_16">
-              <h4 class="font_size_16 white_color text_uppercase">Playlist</h4>
+              <a class=" play_list font_size_16 white_color text_uppercase">Playlist</a>
               <div class="sel_plus">
-                <a class="gray_color font_size_13" href="#"><i class="plus_crea fas fa-plus-square"></i> Crea playlist</a>
+                <a class="play_crea_list gray_color font_size_13" href="#"><i class="plus_crea fas fa-plus-square"></i> Crea playlist</a>
               </div>
             </div>
             <div class="playlist">
@@ -52,13 +52,13 @@
             </div>
             <!-- mobile hidden -->
             <ul class="icone_mobile">
-              <li><a class="  gray_color" href="#"><img class="home mobile" src="img/home.svg" alt="home"></a></li>
-              <li><a class="  gray_color" href="#"><img class="search mobile" src="img/search.svg" alt="home"></a></li>
-              <li><a class="  gray_color" href="#"><img class="library mobile" src="img/libreria.svg" alt="home"></a></li>
+              <li><a class="gray_color" href="#"><img class="home mobile" src="img/home.svg" alt="home"></a></li>
+              <li><a class="gray_color" href="#"><img class="search mobile" src="img/search.svg" alt="home"></a></li>
+              <li><a class="gray_color" href="#"><img class="library mobile" src="img/libreria.svg" alt="home"></a></li>
             </ul>
             <div class="app_profile_mobile text_center">
               <a class="app_mobile gray_color font_size_11"><i class="gray_color download_mobile far fa-arrow-alt-circle-down"></i></a>
-              <img class="profile_mobile" src="img/profile.svg" alt="profile">
+              <a href="#"><img class="profile_mobile" src="img/profile.svg" alt="profile"></a>
             </div>
           </nav>
         </aside>
@@ -94,7 +94,7 @@
                   <div class="text"><i class="far fa-play-circle"></i></div>
                 </div>
                 </div>
-                  <h3 class="white_color text_center">Heavy Metal</h3>
+                  <a href="#"><h3 class="white_color text_center">Heavy Metal</h3></a>
                   <p class="sub gray_color font_size_13 text_center">Subtitle</p>
               </div>
               <!-- overlay -->
@@ -154,7 +154,44 @@
           </div>
         </div>
       </main>
-      <footer></footer>
+      <footer>
+        <div class="media_player_start">
+          <div class="album_riprodotto">
+            <img class="riprodotto" src="img/sinister.jpeg" alt="riproduzione">
+          </div>
+          <div class="titolo_riprodotto gray_color">
+            <h5 class="font_size_13 bolder">Sinister</h5>
+            <p class="font_size_10">Brano Nome</p>
+          </div>
+          <div class="heart_folder">
+            <a class="icon_heart gray_color" href="#"><i class=" heart_icon far fa-heart"></i></a>
+            <a class="icon_heart gray_color" href="#"><i class="far fa-folder"></i></a>
+          </div>
+        </div>
+        <div class="media_player_nav">
+          <div class="first_player">
+            <a class="icon_heart white_color" href="#"><i class="fas fa-random"></i></a>
+            <a class="icon_heart white_color" href="#"><i class="fas fa-step-backward"></i></a>
+            <a class="icon_heart white_color" href="#"><i class="play_more far fa-play-circle"></i></a>
+            <a class="icon_heart white_color" href="#"><i class="fas fa-step-forward"></i></a>
+            <a class="icon_heart white_color" href="#"><i class="fas fa-redo-alt"></i></a>
+          </div>
+          <div class="second_player">
+            <div class="time font_size_13  white_color">0.25</div>
+            <div class="progress_bar"> <hr> </div>
+            <div class="time font_size_13 barra white_color">4.35</div>
+          </div>
+        </div>
+
+        <div class="media_player_end">
+          <div class="list_desk_volume">
+            <a class="icon_heart gray_color" href="#"><i class="list_desk_icon heart_icon fas fa-list"></i></a>
+            <a class="icon_heart gray_color" href="#"><i class="list_desk_icon heart_icon fas fa-desktop"></i></a>
+            <a class="icon_heart gray_color" href="#"><i class="list_desk_icon heart_icon fas fa-volume-up"></i></a>
+          <div class="volume_bar"> <hr> </div>
+        </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
