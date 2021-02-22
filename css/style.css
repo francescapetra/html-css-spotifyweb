@@ -431,7 +431,7 @@ div.time{
   display: inline-block;
 }
 
- /* div.volume_bar, */
+ /* avanzamento_bar, */
  div.progress_bar{
   display:block;
   width: 80%;
@@ -450,7 +450,9 @@ div.progress_bar:hover:after{
   top: 65%;
 }
 i.set_volume,
-i.set_volume:hover{
+i.set_volume:hover,
+i.set_volume_audio,
+i.set_volume_audio:hover{
   position:absolute;
   z-index: 10;
   padding-left: 18%;
@@ -458,34 +460,57 @@ i.set_volume:hover{
   width: 100%;
   font-size: 12px;
 }
-div.progress_bar>i.set_volume{
+div.progress_bar>i.set_volume,
+div.volume_bar>i.set_volume_audio{
   color: transparent
 }
-div.progress_bar>i.set_volume:hover{
+div.progress_bar>i.set_volume:hover,
+div.volume_bar>i.set_volume_audio:hover{
   color: gray;
 }
-/* bar volume fine  */
-
-
-
+/* bar volume */
+div.volume_bar{
+ display:block;
+ background-color: gray;
+ border: 2px solid gray;
+}
 .media_player_end{
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: flex-end;
   width: 100%;
+  position: relative;
 }
 i.list_desk_icon{
  font-size: 13px;
- /* margin-right: 10px; */
 }
-
 div.volume_bar{
   display: inline-block;
   width: 30%;
   vertical-align: middle;
   align-items: flex-end;
 }
+div.volume_bar:hover:after{
+  content: "";
+  display: block;
+  border-bottom: 3px solid #adff2f;
+  margin: auto;
+  width: 19%;
+  position: absolute;
+  top: 48%;
+}
+i.set_volume_audio,
+i.set_volume_audio:hover{
+  position:absolute;
+  z-index: 10;
+  padding-left: 18%;
+  top: 43%;
+  width: 30%;
+  font-size: 12px;
+}
+
+
 
 @media screen and (max-width: 1100px) {
   div.album_item{
