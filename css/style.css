@@ -428,36 +428,38 @@ div.progress_bar{
   margin: 0 auto;
 }
  /* div.volume_bar, */
- hr{
+ div.progress_bar{
   display:block;
-  width: 90%;
+  width: 80%;
   background-color: gray;
-  border: 1px solid gray;
+  border: 2px solid gray;
   margin: 0 auto;
   vertical-align: middle;
 }
-hr.prova:hover{
+div.progress_bar:hover:after{
   content: "";
   display: block;
   border-bottom: 3px solid #adff2f;
   margin: auto;
-  width: 100px;
+  width: 19%;
   position: absolute;
-  left: 71px;
-  top: 57px;
+  top: 58px;
   visibility: visible;
 }
-i.set_volume{
-  position: absolute;
-  left: 32%;
+i.set_volume,
+i.set_volume:hover{
+  position:absolute;
+  z-index: 10;
+  padding-left: 18%;
   top: 53px;
-  width: 100px;
-  color: gray;
+  width: 100%;
   font-size: 12px;
-  visibility: visible;
 }
-i.set_volume{
-  /* visibility: hidden; */
+div.progress_bar>i.set_volume{
+  color: transparent
+}
+div.progress_bar>i.set_volume:hover{
+  color: gray;
 }
 .media_player_end{
   display: flex;
@@ -524,6 +526,9 @@ div.volume_bar{
   }
   div.nav_bar{
     width: 100%;
+  }
+    a.icon_play {
+    margin: 0px 2px;
   }
   /* i{
     font-size: 12px;
