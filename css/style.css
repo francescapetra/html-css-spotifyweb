@@ -347,12 +347,12 @@ footer{
 div.media_player_start,
 div.media_player_nav,
 div.media_player_end{
-  width: calc((100% /3) );
+  width: calc((100% /3));
   display: flex;
   justify-content: space-between;
 }
 .media_player_start{
-  padding-right: 10px;
+  /* padding-right: 10px; */
   background-color: #282828;
   display: flex;
   flex-wrap: nowrap;
@@ -363,10 +363,7 @@ div.album_riprodotto{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 25%;
-}
-a.icon_heart{
-  display: block;
+  width: 20%;
 }
 img.riprodotto{
   width: 50%;
@@ -399,6 +396,7 @@ i.heart_icon{
   align-content: center;
   justify-content: center;
   flex-wrap: wrap;
+  position: relative;
 }
 div.first_player,
 div.second_player{
@@ -414,18 +412,22 @@ a.icon_play{
   margin: 0 10px;
 }
 div.second_player{
-  width: 100%;
+  width: 90%;
   margin: 10px auto;
   align-items: center;
 }
 a i.play_more{
   font-size: 30px;
 }
+div.time{
+  display: inline-block;
+}
 div.progress_bar{
   display: inline-block;
   width: 100%;
   margin: 0 auto;
 }
+ /* div.volume_bar, */
  hr{
   display:block;
   width: 90%;
@@ -434,13 +436,29 @@ div.progress_bar{
   margin: 0 auto;
   vertical-align: middle;
 }
-hr:hover{
+hr.prova:hover{
   content: "";
   display: block;
   border-bottom: 3px solid #adff2f;
-  margin-top: 2px;
+  margin: auto;
+  width: 100px;
+  position: absolute;
+  left: 71px;
+  top: 57px;
+  visibility: visible;
 }
-
+i.set_volume{
+  position: absolute;
+  left: 32%;
+  top: 53px;
+  width: 100px;
+  color: gray;
+  font-size: 12px;
+  visibility: visible;
+}
+i.set_volume{
+  /* visibility: hidden; */
+}
 .media_player_end{
   display: flex;
   flex-wrap: nowrap;
@@ -469,15 +487,15 @@ div.volume_bar{
   div.album_item{
     width: calc((100%/2) - 10px);
   }
-  ul.scelta_genere li a {
+  /* ul.scelta_genere li a {
   /* margin-right: 35px; */
-  margin-top: 20px;
-  }
+  /* margin-top: 20px;
+  /* } */
   h2{
     font-size: 18px;
   }
   h3{
-    font-size: 10px;
+    font-size: 15px;
   }
   p.sub{
     font-size: 10px;
@@ -489,6 +507,7 @@ div.volume_bar{
     margin: 0px 5px;
 }
 }
+/* @media screen and (max-width: 570px) */
 @media screen and (max-width: 420px) {
   .menu_aside{
     visibility: hidden;
@@ -506,9 +525,12 @@ div.volume_bar{
   div.nav_bar{
     width: 100%;
   }
-  i{
+  /* i{
     font-size: 12px;
-  }
+  } */
+  /* div.heart_folder {
+    margin: auto 0;
+} */
 }
  @media screen and (max-height:170px) {
   .nav_bar{
