@@ -564,7 +564,7 @@ i.set_volume_audio:hover{
   .button {
       margin-right: 10px;
   }
-  a.icon_play {
+  button.icon_play {
     margin: 0px 5px;
 }
 }
@@ -614,7 +614,7 @@ i.set_volume_audio, i.set_volume_audio:hover {
   div.nav_bar{
     width: 100%;
   }
-    a.icon_play {
+  button.icon_play{
     margin: 0px 2px;
   }
   div.album_riprodotto{
