@@ -427,19 +427,27 @@ div.first_player{
   margin: 0px auto;
   align-items: center;
 }
-a.icon_play{
+Button.icon_play{
   margin: 0 10px;
+  color: white;
+  background-color: transparent;
+  border: none;
 }
-a.icon_play:hover,
+button.icon_play:focus{
+  outline: none;
+  box-shadow: none;
+}
+Button.icon_play:hover,
 .play:hover{
   color: #adff2f;
+  cursor: pointer;
 }
 div.second_player{
   width: 90%;
   margin: 10px auto;
   align-items: center;
 }
-a i.play_more{
+i.play_more{
   font-size: 30px;
 }
 div.time{
