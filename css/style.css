@@ -210,6 +210,9 @@ ul li.border a.active_left{
   color: #fff;
   font-weight: 700;
 }
+/* img.home:active{
+  opacity: 1;
+} */
 ul.icone{
 border-left: 3px;
 }
@@ -326,7 +329,7 @@ div.container_img{
 div.album_item:hover .overlay{
   opacity: 0.8;
   overflow: hidden;
-  transform: rotate(360deg);
+  transform:rotate(360deg);
 }
 .text {
   color: white;
@@ -459,6 +462,16 @@ div.progress_bar:hover:after{
   position: absolute;
   top: 65%;
 }
+div.progress_bar:after{
+  content: "";
+  display: block;
+  border-bottom: 3px solid white;
+  width: 19%;
+  position: absolute;
+  top: 65%;
+  margin: auto;
+  display: block;
+}
 i.set_volume,
 i.set_volume:hover,
 i.set_volume_audio,
@@ -510,6 +523,16 @@ div.volume_bar:hover:after{
   position: absolute;
   top: 48%;
 }
+div.volume_bar:after{
+  content: "";
+  display: block;
+  border-bottom: 3px solid #fff;
+  margin: auto;
+  width: 19%;
+  position: absolute;
+  top: 48%;
+}
+
 i.set_volume_audio,
 i.set_volume_audio:hover{
   position:absolute;
@@ -521,9 +544,7 @@ i.set_volume_audio:hover{
 }
 
 @media screen and (min-width:1900px) and (max-height:170px){
-  div.media_player_start{
-    width:25%;
-}
+
 }
 
 @media screen and (max-width: 1100px) {
@@ -611,16 +632,11 @@ i.set_volume, i.set_volume:hover {
 } */
 }
  @media screen and (max-height:170px) {
-  .nav_bar{
-    z-index: 25;
-  }
+
   .menu_aside{
     z-index: 15;
   }
   footer{
     z-index: 20;
-  }
-  div.titolo_riprodotto{
-    width: 15%;
   }
 }
