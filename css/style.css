@@ -289,11 +289,11 @@ p.suggest{
   margin-bottom: 20px;
 }
 div.titolo_genere{
-  width: 95%;
+  width: calc(100% - 20px);
 }
 .raccolta_album,
 .creato_per{
-  width: 95%;
+  width: calc(100% - 20px);
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 30px;
