@@ -186,7 +186,8 @@ border-width: thin;
 width: 90%;
 margin: 10px 0;
 }
-ul.scelta_genere li a:focus:after{
+ul.scelta_genere li a:focus:after,
+ul.scelta_genere li a.active_fix:after{
 content: "";
 display: block;
 text-align: center;
@@ -196,10 +197,12 @@ margin-bottom: -3px;
 background-color: #adff2f;
 width: 40%;
 }
+
 ul.scelta_genere li a:focus{
   color: #fff;
 }
-ul li.border a:focus{
+ul li.border a:focus,
+ul li.border a.active_left{
   content: "";
   display: block;
   border-left: 3px solid #adff2f;
@@ -307,7 +310,7 @@ img.album-cover{
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: 1s ease-in;
+  transition: 0.5s ease-in;
   background-color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
   cursor: pointer;
