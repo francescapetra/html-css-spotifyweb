@@ -322,6 +322,7 @@ img.album-cover{
 div.album_item{
   width: calc((100%/6) - 10px);
   margin-right: 10px;
+  overflow: hidden;
 }
 div.container_img{
   position: relative;
