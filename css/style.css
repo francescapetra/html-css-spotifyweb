@@ -276,7 +276,6 @@ i.plus_crea{
   width: 100%;
 }
 .main_content,
-div.titolo_genere,
 div.sotto_categoria_genere{
 width: 100%;
 }
@@ -289,9 +288,12 @@ p.sub{
 p.suggest{
   margin-bottom: 20px;
 }
+div.titolo_genere{
+  width: 95%;
+}
 .raccolta_album,
 .creato_per{
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 30px;
@@ -586,7 +588,6 @@ i.set_volume_audio, i.set_volume_audio:hover {
     top: 37%;
 }
 } */
-
 @media screen and (max-width: 420px) {
   .menu_aside{
     visibility: hidden;
