@@ -37,6 +37,11 @@ body{
 .bolder{
   font-weight: bold;
 }
+.text_underline:hover{
+  text-decoration: underline;
+  color: #fff;
+  cursor: pointer;
+}
 ul li a.bolder:hover,
 .play_crea_list:hover{
   font-size: 14px;
