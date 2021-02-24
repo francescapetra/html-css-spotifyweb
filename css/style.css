@@ -570,7 +570,7 @@ i.set_volume_audio:hover{
 }
 /* altro responsive */
 
-/* @media screen and (max-width: 570px) {
+@media screen and (max-width: 570px) {
   div.media_player_nav{
     width: 100%;
     order: 3;
@@ -585,10 +585,10 @@ div.second_player{
 margin: 0px auto;
 }
 div.progress_bar:hover:after, div.progress_bar:after {
-    top: 73%;
+    top: 76%;
 }
 div.volume_bar:hover:after, div.volume_bar:after {
-    top: 45%;
+    top: 46%;
 }
 i.set_volume, i.set_volume:hover {
     top: 67%;
@@ -596,8 +596,8 @@ i.set_volume, i.set_volume:hover {
 i.set_volume_audio, i.set_volume_audio:hover {
     top: 37%;
 }
-} */
-@media screen and (max-width: 420px) {
+}
+@media screen and (max-width: 570px) {
   .menu_aside{
     visibility: hidden;
   }
